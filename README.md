@@ -38,7 +38,7 @@ wess sudahh
 
 ## Sebelum modifikasi koding sudah donload di laptop
 
--   git checkout master (masuk ke main)
+-   git checkout main (masuk ke main)
 -   git fetch
 -   git status (mengecek apaklah ada perubahan atau tidak)
 -   git pull
