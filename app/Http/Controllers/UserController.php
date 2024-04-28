@@ -10,7 +10,7 @@ class UserController extends Controller
     function getAll()
     {
         $data = array(
-            'users' => UserModel::all()
+            'akuns' => UserModel::all()
         );
         return view('userList_admin', $data);
     }
