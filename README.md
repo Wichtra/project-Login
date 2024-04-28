@@ -14,9 +14,9 @@ Lalu jalankan di terminal:
 -   composer install
 -   copy .env.example .env
 -   Buka .env trus cari DB\_\* sesuaikan sama database kalian (kalau port Db ga dimodifikasi langsung step selanjutnya)
--   Run php artisan key:generate
--   Run php artisan migrate
--   Run php artisan serve
+-   php artisan key:generate
+-   php artisan migrate
+-   php artisan serve
 
 ## kalau mau modifikasi pastikan dulu keluar dari branch master (pojok kiri bawah)
 
