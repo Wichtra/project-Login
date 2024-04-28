@@ -6,13 +6,13 @@ Dibutuhkan:
 
 Langkah-langkah:
 
--   Clone your project (git clone https://github.com/Wichtra/project-Login)
--   Masuk ke direktori (cd project-login)
-
-Lalu jalankan di terminal:
-
+Jalankan di terminal:
+-   git clone https://github.com/Wichtra/project-Login (Clone project)
+-   cd project-login (Masuk ke direktori)
+-   code .
+Buka terminal di vscode
 -   composer install
--   copy .env.example .env
+-   cp .env.example .env
 -   Buka .env trus cari DB\_\* sesuaikan sama database kalian (kalau port Db ga dimodifikasi langsung step selanjutnya)
 -   php artisan key:generate
 -   php artisan migrate
