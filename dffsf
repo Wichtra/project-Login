@@ -1,0 +1,70 @@
+[33mcommit 8eb44bc62144504eeec1a6ca9a0667dac6e539a8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Wichtra <willy.chairullah@gmail.com>
+Date:   Sun Apr 28 15:12:28 2024 +0700
+
+    Revert "Merge pull request #1 from Wichtra/master"
+    
+    This reverts commit 90a4a56c6fcecfb633ebaf35d18a94102340ad5e, reversing
+    changes made to b1c158d3e21059d4a3df44ebaeda6c92562a1cee.
+
+[33mcommit 767ca86d94b7f0984fc90fa907a0a02c476fc878[m
+Merge: d7e6251 842322e
+Author: Willy chairullah <106299131+Wichtra@users.noreply.github.com>
+Date:   Sun Apr 28 14:46:30 2024 +0700
+
+    Merge pull request #5 from Wichtra/development
+    
+    Development
+
+[33mcommit d7e62510e6faa457bbbc9329bba6ef0e566cd9d1[m
+Merge: 7bfbb7b 6dd1ef9
+Author: Willy chairullah <106299131+Wichtra@users.noreply.github.com>
+Date:   Sun Apr 28 14:45:52 2024 +0700
+
+    Merge pull request #4 from Wichtra/Wichtra-patch-1
+    
+    Update README.md
+
+[33mcommit 6dd1ef98d81431900d19678100ccd046e4480595[m
+Author: Willy chairullah <106299131+Wichtra@users.noreply.github.com>
+Date:   Sun Apr 28 14:44:57 2024 +0700
+
+    Update README.md
+    
+    ubah tutorial
+
+[33mcommit 842322edac3615ec741a0984f258bfc758a3865c[m
+Merge: 90a4a56 7bfbb7b
+Author: Willy chairullah <106299131+Wichtra@users.noreply.github.com>
+Date:   Sun Apr 28 14:42:21 2024 +0700
+
+    Merge pull request #3 from Wichtra/master
+    
+    ubah databse
+
+[33mcommit 7bfbb7b31afbc51352b80e5817efd609dcbd8f6e[m
+Author: Wichtra <willy.chairullah@gmail.com>
+Date:   Sun Apr 28 11:02:18 2024 +0700
+
+    ubah databse
+
+[33mcommit 90a4a56c6fcecfb633ebaf35d18a94102340ad5e[m[33m ([m[1;31morigin/development[m[33m, [m[1;32mdevelopment[m[33m)[m
+Merge: b1c158d 6f91950
+Author: Willy chairullah <106299131+Wichtra@users.noreply.github.com>
+Date:   Sun Apr 28 10:51:23 2024 +0700
+
+    Merge pull request #1 from Wichtra/master
+    
+    buat databases
+
+[33mcommit 6f919502b89595c5a43de68e163ce9f04d6d3930[m
+Author: Wichtra <willy.chairullah@gmail.com>
+Date:   Sun Apr 28 10:40:04 2024 +0700
+
+    buat databases
+
+[33mcommit b1c158d3e21059d4a3df44ebaeda6c92562a1cee[m
+Author: Wichtra <willy.chairullah@gmail.com>
+Date:   Sun Apr 28 05:28:36 2024 +0700
+
+    login project uploaded
