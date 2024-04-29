@@ -55,16 +55,15 @@
                         <p>Update User Account</p>
                     </div>
                     <form action="{{url('/userlist')}}" method="POST">
+                        @csrf
+                        @method('PUT')
                         <div class="form-content">
                             <div class="form-display">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="username" id="usernameup" placeholder="Username" />
+                                    <input class="form-control" type="text" name="username" id="usernameup" placeholder="Username" value="{{ $akun -> username }}" />
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="email" id="email" placeholder=" Email" />
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="password" name="passwordup" id="passwordup" placeholder="Password" />
+                                    <input class="form-control" type="text" name="email" id="email" placeholder=" Email" value="{{ $akun -> email }}" />
                                 </div>
                                 <div style="display: flex; margin-bottom: 1rem;">
                                     <input type="checkbox" name="show" class="form-check-input" onclick="showPassUp()">
