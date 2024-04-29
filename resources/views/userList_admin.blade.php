@@ -61,23 +61,22 @@
                                 <tr>
                                     <th>Username</th>
                                     <th>Email</th>
-                                    <th>Password</th>
                                     <th colspan="2">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {{-- foreach --}}
+                                @foreach ($akun as $akuns)
                                 <tr>
-                                    <td>willy</td>
-                                    <td>willy@gmial</td>
-                                    <td>ada123</td>
+                                    <td>{{ $akuns -> username }}</td>
+                                    <td>{{ $akuns -> email }}</td>
                                     <td>
-                                        <a href="{{url('/update')}}" class="btn btn-primary">Update</a>
+                                        <a href="{{url('/update')}}/{{ $akuns -> id }}" class="btn btn-primary">Update</a>
                                     </td>
                                     <td>
-                                        <a href="{{url('/userlist/delete')}}" class="btn btn-danger">Delete</a>
+                                        <a href="{{url('/userlist/delete')}}/{{ $akuns -> id }}" class="btn btn-danger">Delete</a>
                                     </td>
                                 </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

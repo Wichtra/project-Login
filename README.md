@@ -12,7 +12,7 @@ Lalu jalankan di terminal di folder yang mau di donload:
 -   code .
     Buka terminal di vscode
 -   composer install
--   copy .env.example .env
+-   cp .env.example .env
 -   Buka .env trus cari DB\_\* sesuaikan sama database kalian (kalau port Db ga dimodifikasi langsung step selanjutnya)
 -   php artisan key:generate
 -   php artisan migrate
