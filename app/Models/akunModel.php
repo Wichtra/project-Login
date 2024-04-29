@@ -7,7 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class akunModel extends Authenticatable
 {
+    public $timestamps = false;
     protected $table = 'akun'; // Sesuaikan dengan nama tabel Anda
     protected $username = 'username'; // Sesuaikan dengan nama kolom pengenal pengguna Anda
-
 }

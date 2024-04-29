@@ -15,17 +15,18 @@
 <body>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="{{url('/login')}}" method="POST">
+		<form method="POST">
+			@csrf
 			<h1 style="margin-bottom: 1rem;">Sign Up</h1>
 			<span>Daftarkan Akun Anda Disini</span>
-			<input type="text" name="username" id="usernameup" placeholder="Username" />
+			<input type="text" name="username" id="username" placeholder="Username" />
             <input type="text" name="email" id="email" placeholder=" Email" />
-			<input type="password" name="passwordup" id="passwordup" placeholder="Password" />
+			<input type="password" name="password" id="password" placeholder="Password" />
 			<div style="display: flex;">
 				<input type="checkbox" name="show" class="form-check-input" onclick="showPassUp()">
 				<label for="show" class="form-check-label text-center" style="font-size: 12px; white-space: nowrap; margin-left: 3px; margin-top: 6px;">Show password</label>
 			</div>
-			<button type="submit" name="signup">Sign Up</button>
+			<button type="submit">Sign Up</button>
 			<span style="color: red; margin-top: 0.3rem;"><?= (isset($errorS)) ? $errorS:"" ?></span>
 		</form>
 	</div>
@@ -55,6 +56,7 @@
 				<h1>Sign In</h1>
 				<p>Sign In menggunakan akun anda yang telah terdaftar.</p>
 				<button class="ghost" id="signup">Sign up »</button>
+				{{ Session::get('message') }}
 			</div>
 		</div>
 	</div>
