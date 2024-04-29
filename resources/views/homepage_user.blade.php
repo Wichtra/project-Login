@@ -36,13 +36,13 @@
         <content>
             <div class="header-container" style="padding: 0 2rem; justify-content: flex-end;">
                 <img class="img-account" src="{{url('images/user.png')}}"/>
-                <span>User</span>
+                <span>{{ $akun -> username }}</span>
             </div>
             <div class="content-container">
                 <div class="content-home">
                     <img class="img-home" src="{{url('images/home.png')}}" alt="home">
                     <span>Selamat Datang</span>
-                    <span class="text-user"><b>User</b></span>
+                    <span class="text-user"><b>{{ $akun -> username }}</b></span>
                 </div>
             </div>
         </content>
