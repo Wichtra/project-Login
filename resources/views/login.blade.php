@@ -30,7 +30,8 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="" method="GET">
+		<form action="/login" method="POST">
+			@csrf
 			<h1 style="margin-bottom: 1rem;">Sign In</h1>
 			<span>Sign In dengan Username dan Password</span>
 			<input type="text" name="username" id="username" placeholder="Username" />

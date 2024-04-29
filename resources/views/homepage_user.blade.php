@@ -29,7 +29,7 @@
                 </div>
                 <div class="sidebar-logout">
                     <img class="img-logo" src="{{url('images/logout.png')}}" alt="logout-icon">
-                    <a class="logout" href="?logout=''"><b>Log Out</b></a>
+                    <a class="logout" href="/logout"><b>Log Out</b></a>
                 </div>
             </div>
         </sidebar>

@@ -10,7 +10,7 @@ class akunController extends Controller
     function getAll()
     {
         $data = array(
-            'akuns' => akunModel::all()
+            'akun' => akunModel::all()
         );
         return view('userList_admin', $data);
     }
