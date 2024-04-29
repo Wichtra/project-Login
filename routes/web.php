@@ -10,8 +10,8 @@ Route::post('/',[loginController::class, 'signUp']);
 Route::post('/login',[loginController::class, 'login']);
 Route::get('/logout',[loginController::class, 'logout']);
 Route::get('/userlist',[akunController::class, 'getAll']);
-Route::get('/update/{id}',[akunController::class, 'findOne']);
-Route::put('/update/{id}',[akunController::class, 'update'])->name('akun.update');
+// Route::match(['get', 'post'], '/update/{id}', function () {});
+Route::match(['get','post'],'/update/{id}',[AkunController::class,'update']);
 Route::get('/userlist/delete/{id}', [AkunController::class, 'delete'])->name('akun.delete');
 
 Route::get('/admin', function () {

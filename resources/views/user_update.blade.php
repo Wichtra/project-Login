@@ -54,16 +54,18 @@
                     <div class="content-form-header">
                         <p>Update User Account</p>
                     </div>
-                    <form action="{{url('/userlist')}}" method="POST">
+                    <form method="POST">
                         @csrf
-                        @method('PUT')
                         <div class="form-content">
                             <div class="form-display">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="username" id="usernameup" placeholder="Username" value="{{ $akun -> username }}" />
+                                    <input class="form-control" type="text" name="username" id="username" placeholder="Username" value="{{ (isset($akun)) ? $akun->username : ''}}" />
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="email" id="email" placeholder=" Email" value="{{ $akun -> email }}" />
+                                    <input class="form-control" type="text" name="email" id="email" placeholder=" Email" value="{{ (isset($akun)) ? $akun->email : ''}}" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="number" name="level" id="level" placeholder=" level" value="{{ (isset($akun)) ? $akun -> level : ''}}" />
                                 </div>
                                 <div style="display: flex; margin-bottom: 1rem;">
                                     <input type="checkbox" name="show" class="form-check-input" onclick="showPassUp()">
