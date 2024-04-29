@@ -32,11 +32,15 @@ class loginController extends Controller
         ];
         if (Auth::attempt($info)) {
             $user = Auth::user(); // Mendapatkan instance user yang sedang login
-
+            $data = array(
+                'akun' => akunModel::find($user->id)
+            );
             if ($user->level == 1) {
-                return redirect('/admin');
+                // return $data;
+                return view('homepage_admin', $data);
             } else if ($user->level == 2) {
-                return redirect('/user');
+                return view('homepage_user', $data);
+                // return $user;
             }
         }
     }

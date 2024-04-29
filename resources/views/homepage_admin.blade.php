@@ -46,7 +46,7 @@
                 </div>
                 <div style="padding-right: 1rem; flex: 1;">
                     <img class="img-account" src="{{url('images/admin.png')}}"/>
-                    <span>Admin</span>
+                    <span>{{ $akun -> username }}</span>
                 </div>
             </div>
             <div class="content-container">

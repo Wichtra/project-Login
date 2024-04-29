@@ -47,7 +47,7 @@
                 </div>
                 <div style="padding-right: 1rem; flex: 1;">
                     <img class="img-account" src="{{url('images/admin.png')}}"/>
-                    <span>Admin</span>
+                    <span>admin</span>
                 </div>
             </div>
             <div class="content-container">
@@ -67,14 +67,17 @@
                             <tbody>
                                 @foreach ($akun as $akuns)
                                 <tr>
-                                    <td>{{ $akuns -> username }}</td>
-                                    <td>{{ $akuns -> email }}</td>
-                                    <td>
-                                        <a href="{{url('/update')}}/{{ $akuns -> id }}" class="btn btn-primary">Update</a>
-                                    </td>
-                                    <td>
-                                        <a href="{{url('/userlist/delete')}}/{{ $akuns -> id }}" class="btn btn-danger">Delete</a>
-                                    </td>
+                                    @if ($akuns -> level == 2)
+                                        <td>{{ $akuns -> username }}</td>
+                                        <td>{{ $akuns -> email }}</td>
+                                        {{-- <td>{{ $akuns -> level }}</td> --}}
+                                        <td>
+                                            <a href="{{url('/update')}}/{{ $akuns -> id }}" class="btn btn-primary">Update</a>
+                                        </td>
+                                        <td>
+                                            <a href="{{url('/userlist/delete')}}/{{ $akuns -> id }}" class="btn btn-danger">Delete</a>
+                                        </td>
+                                    @endif
                                 </tr>
                                 @endforeach
                             </tbody>
