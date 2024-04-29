@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\akunModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class akunController extends Controller
 {
@@ -15,19 +16,29 @@ class akunController extends Controller
         return view('userList_admin', $data);
     }
 
-    function findOne($id){
+    function findOne($id)
+    {
         $data = array(
             'akun' => akunModel::find($id)
         );
         return view('user_update', $data);
     }
-    function update(Request $request ,$id){
-        $akun = akunModel::find($id);
-        $akun -> update($request->all());
-
-        return redirect('userlist');
+    public function update(Request $request)
+    {
+        $akun = akunModel::find($request->id);
+        $data = array(
+            'akun' => $akun
+        );
+        if ($request->isMethod('post')) {
+            $akun->username = $request->username;
+            $akun->email = $request->email;
+            $akun->level = $request->level;
+            $akun->save();
+            return redirect('/userlist')->with(['message' => 'Akun berhasil dibuat']);
+        }
+        return view('user_update', $data);
     }
-    
+
     public function delete($id)
     {
         $akun = akunModel::find($id);
@@ -38,4 +49,3 @@ class akunController extends Controller
         return redirect('userlist');
     }
 }
-
