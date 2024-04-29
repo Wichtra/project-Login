@@ -6,6 +6,7 @@ use App\Http\Controllers\loginController;
 use App\Http\Controllers\akunController;
 
 Route::get('/',[loginController::class, 'index']);
+Route::post('/',[loginController::class, 'signUp']);
 Route::post('/login',[loginController::class, 'login']);
 Route::get('/logout',[loginController::class, 'logout']);
 Route::get('/userlist',[akunController::class, 'getAll']);
