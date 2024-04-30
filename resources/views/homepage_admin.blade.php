@@ -14,41 +14,10 @@
 <body>
     <section id="main-grid">
         <sidebar>
-            <div class="sidebar-container">
-                <div class="sidebar-nav">
-                    <nav class="navbar navbar-dark">
-                        <p style="font-size: 2.5rem;">Kelompok 5</p>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">22-025 | Kun Fadhilah</li>
-                            <li class="nav-item">22-045 | Willy Chairullah F.P.</li>
-                            <li class="nav-item">22-089 | Ahmad Ramadani B.</li>
-                            <li class="nav-item">22-165 | Adi Prawono</li>
-                            <li class="nav-item">22-194 | Moh Fais Rizqianshah</li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="sidebar-logout">
-                    <img class="img-logo" src="{{url('images/logout.png')}}" alt="logout-icon">
-                    <a class="logout" href="/logout"><b>Log Out</b></a>
-                </div>
-            </div>
+            @include('sidebar_temp')
         </sidebar>
         <content>
-            <div class="header-container">
-                <div style="padding-left: 4rem; flex: 9;">
-                    <nav class="navbar nav-light">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="{{url('/userlist')}}" style="color: #000; text-decoration: none; font-size: 1.2rem;"><b>User List</b></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div style="padding-right: 1rem; flex: 1;">
-                    <img class="img-account" src="{{url('images/admin.png')}}"/>
-                    <span>{{ $akun -> username }}</span>
-                </div>
-            </div>
+            @include('header_temp')
             <div class="content-container">
                 <div class="content-home">
                     <img class="img-home" src="{{url('images/home.png')}}" alt="home">
