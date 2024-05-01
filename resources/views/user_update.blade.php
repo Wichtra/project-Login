@@ -67,10 +67,6 @@
                                 <div class="form-group">
                                     <input class="form-control" type="number" name="level" id="level" placeholder=" level" value="{{ (isset($akun)) ? $akun -> level : ''}}" />
                                 </div>
-                                <div style="display: flex; margin-bottom: 1rem;">
-                                    <input type="checkbox" name="show" class="form-check-input" onclick="showPassUp()">
-                                    <label for="show" class="form-check-label text-center" style="font-size: 16px; white-space: nowrap; margin-left: 3px; margin-top: 6px;">Show password</label>
-                                </div>
                                 <div class="form-group">
                                     <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
                                 </div>
