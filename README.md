@@ -15,6 +15,7 @@ Lalu jalankan di terminal di folder yang mau di donload:
 -   cp .env.example .env
 -   Buka .env trus cari DB\_\* sesuaikan sama database kalian (kalau port Db ga dimodifikasi langsung step selanjutnya)
 -   php artisan key:generate
+-   php artisan db:seed akunTableSeeder
 -   php artisan migrate
 -   php artisan serve
 
@@ -42,4 +43,5 @@ wess sudahh
 -   git fetch
 -   git status (mengecek apaklah ada perubahan atau tidak)
 -   git pull
--   git checkout development (pindah ke branch development lagi buat develop)
+-   git branch [edit-frontend] (branch opsional, yang mau di modifikasi misal: edit-frontend)
+-   git checkout [edit-frontend]
