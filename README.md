@@ -1,47 +1,122 @@
-## Cara menjalankan repo ini
+# Project Login
 
-Dibutuhkan:
+## Cara Menjalankan Repo Ini
 
--   Software git
+### Dibutuhkan:
 
-Langkah-langkah:
-Lalu jalankan di terminal di folder yang mau di donload:
+- Software git
+- Composer
+- PHP
+- Database (MySQL atau yang kompatibel)
 
--   Clone your project (git clone https://github.com/Wichtra/project-Login)
--   Masuk ke direktori (cd project-login)
--   code .
-    Buka terminal di vscode
--   composer install
--   cp .env.example .env
--   Buka .env trus cari DB\_\* sesuaikan sama database kalian (kalau port Db ga dimodifikasi langsung step selanjutnya)
--   php artisan key:generate
--   php artisan db:seed akunTableSeeder
--   php artisan migrate
--   php artisan serve
+### Langkah-langkah:
 
-## kalau mau modifikasi pastikan dulu keluar dari branch master (pojok kiri bawah)
+1. Clone proyek:
+    ```bash
+    git clone https://github.com/Wichtra/project-Login
+    ```
 
-Masuk ke dalam branch development
+2. Masuk ke direktori proyek:
+    ```bash
+    cd project-login
+    ```
 
--   git checkout development
+3. Buka proyek di Visual Studio Code:
+    ```bash
+    code .
+    ```
 
-kalau yang di bawah kiri udah berubah dari master ke development yaudah tinggal ubah codingannya
+4. Buka terminal di Visual Studio Code dan jalankan perintah berikut:
+    ```bash
+    composer install
+    ```
 
-## kalau mau upload github lagi gampang bang
+5. Salin file konfigurasi contoh menjadi file konfigurasi utama:
+    ```bash
+    cp .env.example .env
+    ```
 
-Jalankan di terminal:
+6. Buka file `.env` dan sesuaikan pengaturan database (DB_*) sesuai dengan konfigurasi database Anda.
 
--   git add .
--   git commit -m "opsional(kalau bisa apa yang udah diubah)"
--   git push -u origin development
+7. Jalankan perintah berikut untuk menghasilkan kunci aplikasi:
+    ```bash
+    php artisan key:generate
+    ```
 
-wess sudahh
+8. Seed database dengan data awal:
+    ```bash
+    php artisan db:seed --class=AkunTableSeeder
+    ```
 
-## Sebelum modifikasi koding sudah donload di laptop
+9. Jalankan migrasi database:
+    ```bash
+    php artisan migrate
+    ```
 
--   git checkout main (masuk ke main)
--   git fetch
--   git status (mengecek apaklah ada perubahan atau tidak)
--   git pull
--   git branch [edit-frontend] (branch opsional, yang mau di modifikasi misal: edit-frontend)
--   git checkout [edit-frontend]
+10. Jalankan server pengembangan:
+    ```bash
+    php artisan serve
+    ```
+
+## Cara Melakukan Modifikasi
+
+### Pindah ke Branch Development
+
+1. Pastikan Anda berada di luar branch `master` (lihat di pojok kiri bawah di Visual Studio Code).
+2. Masuk ke branch `development`:
+    ```bash
+    git checkout development
+    ```
+
+Setelah branch diubah ke `development`, Anda bisa mulai melakukan perubahan kode.
+
+### Cara Mengunggah Perubahan ke GitHub
+
+1. Tambahkan perubahan ke staging area:
+    ```bash
+    git add .
+    ```
+
+2. Commit perubahan dengan pesan yang sesuai:
+    ```bash
+    git commit -m "opsional(kalau bisa apa yang udah diubah)"
+    ```
+
+3. Push perubahan ke branch `development`:
+    ```bash
+    git push -u origin development
+    ```
+
+## Sebelum Melakukan Modifikasi Kode (Download Terbaru di Laptop)
+
+1. Masuk ke branch `main`:
+    ```bash
+    git checkout main
+    ```
+
+2. Ambil perubahan terbaru dari repository:
+    ```bash
+    git fetch
+    ```
+
+3. Cek apakah ada perubahan:
+    ```bash
+    git status
+    ```
+
+4. Tarik perubahan terbaru dari repository:
+    ```bash
+    git pull
+    ```
+
+5. Buat branch baru untuk melakukan modifikasi (misalnya `edit-frontend`):
+    ```bash
+    git branch edit-frontend
+    ```
+
+6. Pindah ke branch yang baru dibuat:
+    ```bash
+    git checkout edit-frontend
+    ```
+
+Sekarang Anda siap untuk melakukan modifikasi di branch yang baru dibuat.
