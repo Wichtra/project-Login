@@ -58,17 +58,17 @@
     php artisan serve
     ```
 
-## Cara Melakukan Modifikasi
+## Sebelum Melakukan Modifikasi Kode
 
 ### Pindah ke Branch Development
 
 1. Pastikan Anda berada di luar branch `master` (lihat di pojok kiri bawah di Visual Studio Code).
-2. Masuk ke branch `development`:
+2. Masuk ke branch nama_fitur: //contoh: buat_sorting
     ```bash
-    git checkout development
+    git checkout nama_fitur
     ```
 
-Setelah branch diubah ke `development`, Anda bisa mulai melakukan perubahan kode.
+Setelah branch diubah ke `nama_fitur`, kalian bisa mulai melakukan perubahan kode.
 
 ### Cara Mengunggah Perubahan ke GitHub
 
@@ -89,32 +89,27 @@ Setelah branch diubah ke `development`, Anda bisa mulai melakukan perubahan kode
 
 ## Sebelum Melakukan Modifikasi Kode (Download Terbaru di Laptop)
 
-1. Masuk ke branch `main`:
-    ```bash
-    git checkout main
-    ```
-
-2. Ambil perubahan terbaru dari repository:
+1. Ambil perubahan terbaru dari repository:
     ```bash
     git fetch
     ```
 
-3. Cek apakah ada perubahan:
+2. Cek apakah ada perubahan:
     ```bash
     git status
     ```
 
-4. Tarik perubahan terbaru dari repository:
+3. Tarik perubahan terbaru dari repository:
     ```bash
     git pull
     ```
 
-5. Buat branch baru untuk melakukan modifikasi (misalnya `edit-frontend`):
+4. Buat branch baru untuk melakukan modifikasi (misalnya `edit-frontend`):
     ```bash
     git branch edit-frontend
     ```
 
-6. Pindah ke branch yang baru dibuat:
+5. Pindah ke branch yang baru dibuat:
     ```bash
     git checkout edit-frontend
     ```
