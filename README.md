@@ -63,10 +63,9 @@
 ### Pindah ke Branch Development
 
 1. Pastikan Anda berada di luar branch `master` (lihat di pojok kiri bawah di Visual Studio Code).
-2. Masuk ke branch `nama_fitur`:
+2. Masuk ke branch `nama_fitur`: //contoh: buat_sorting
     ```bash
     git checkout nama_fitur
-    //contoh: buat_sorting
     ```
 
 Setelah branch diubah ke `nama_fitur`, kalian bisa mulai melakukan perubahan kode.
